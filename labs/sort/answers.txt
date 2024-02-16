@@ -1,0 +1,11 @@
+sort1 uses: bubble sort
+
+How do you know?: The iterarions required in the worst-case scenario are those of the best-case scenario squared
+
+sort2 uses: merge sort
+
+How do you know?: The iterations requited in the worst-case scenario are similar to those of the best-case scenario and of the random-case scenario, and has a lower time of excecution than the sort2 algorithm (has a similar behaviors in their three scenarios)
+
+sort3 uses: selection sort
+
+How do you know?: Has similar time of execution in their three scenarios, but not the best performance compared with the sort2 algorithm

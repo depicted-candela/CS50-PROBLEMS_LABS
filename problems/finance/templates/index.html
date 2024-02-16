@@ -1,0 +1,40 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Main
+{% endblock %}
+
+{% block main %}
+    <table class="table table-sm">
+        <thead>
+        <tr>
+            <th scope="col">Symbol</th>
+            <th scope="col">Shares</th>
+            <th scope="col">Actual price</th>
+            <th scope="col">Total value</th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for i,j in info%}
+            <tr>
+                <td>{{ i }}</td>
+                <td>{{ j.shares }}</td>
+                <td>{{ j.price }}</td>
+                <td>{{ j.total }}</td>
+            </tr>
+        {% endfor %}
+        <tr>
+            <td>Cash available</td>
+            <td></td>
+            <td></td>
+            <td>{{ cash }}</td>
+        </tr>
+        <tr>
+            <td>Value in shares</td>
+            <td></td>
+            <td></td>
+            <td>{{ value }}</td>
+        </tr>
+        </tbody>
+    </table>
+{% endblock %}
